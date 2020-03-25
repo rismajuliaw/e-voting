@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <title>client-login-evote</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="client-login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+    <link href="https://fonts.googleapis.com/css?family=Sogeo UI" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    
+</head>
+<body onload="">
+  <div class="container">
+    <div id="head">
+        <p> USE <br> YOUR <br> VOICE </p>
+    </div>
+    <div class="img">
+        <!-- <img src="fix.jpg"> -->
+    </div>
+    
+    <div class="login-container">
+        <div class="col-md-4"></div>
+        <form>
+          <div id="welcome">
+              <p> Welcome to <br> E-voting </p>
+          </div>
+            <div class="form-group">
+               <input type="text" class="input" id="nim" placeholder="Student ID">
+            </div>
+            <div class="form-group">
+               <input type="password" class="input" id="token" placeholder="Token">
+            </div>
+          <button type="submit" id="btn">Login</button>
+          <div id="cu">
+              <a href>Contact us</a>
+          </div>
+      </form>
+    </div>
+  </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function check() {
+          var studID = document.getElementById("nim").value;
+          // var studToken = document.getElementById("token").value;
+          if(document.getElementById("nim").value.match(studID)) {
+            alert("Correct")
+            return true;
+          } else {
+            return false;
+          }
+        }
+        var myBtn = document.getElementById("btn");
+        $(document).ready(function(){
+        // Put Your JQuery Function here
+        myBtn.onclick(function(){
+                $(".modal fade").show();
+            });
+        });
+      </script>
+</body>
