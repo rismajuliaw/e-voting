@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Pemilihan Paslon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="viewpaslon.css">    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</head>
+
+<body onload="" style="background-color: #CFE0E8;">
+    <div class="container">
+        <div class="header">
+            <img src="tel-u.png" alt="" id="logoTU">
+            <img src="hima-if.png" alt="" id="logoIF">
+            <div class="head">
+                PEMILIHAN KETUA DAN WAKIL KETUA <br>
+                BADAN PENGURUS HARIAN (BPH) <br>
+                FAKULTAS INFORMATIKA <br>
+                TAHUN 2022
+            </div>
+        </div>
+       
+        <div class="content">
+            <div class="paslon-content">
+                <img src="paslon-1.png" id="pas1">
+                <button type="submit" id="btnInfo1" data-toggle="modal" data-target="#myModalIn1">Info</button>
+                <button type="submit" id="btnCon1" data-toggle="modal" data-target="#myModalCon"><p id="satu">1</p></button>
+
+                <img src="paslon-2.png" id="pas2">
+                <button type="submit" id="btnInfo2" data-toggle="modal" data-target="#myModalIn2">Info</button>
+                <button type="submit" id="btnCon2" data-toggle="modal" data-target="#myModalCon"><p id="dua">2</p></button>
+            </div>
+        </div>
+    </div>
+        
+  <!-- Modal for Info Paslon1 -->
+<div class="modal fade" id="myModalIn1">
+      <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 style="text-align: center;">VISI & MISI <br>
+                        PASANGAN CALON KETUA DAN WAKIL KETUA <br>
+                        NOMOR URUT 1
+                    </h1>
+                </div>
+                <div class="modal-body">
+                    <p>VISI : <br>
+                        "Menjadikan Himpunan Mahasiswa Informatika bersatu, dan
+                        berkualitas demi tercapainya misi Program Studi Informatika". <br>
+                        <br>
+                        MISI : <br>
+                        1.Mempererat hubungan sesama anggota mahasiswa Informatika. <br>
+                        <br>
+                        2. Menjaga keharmonisan dan sinegritas kepada seluruh elemen 
+                        jurusan teknik Informatika dan lembaga lain. <br>
+                        <br>
+                        3. Mewadahi, memproses, dan melaksanakan aspirasi mahasiswa Informatika.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="buttonIn1" data-dismiss="modal">Kembali</button>
+                </div>
+            </div>
+      </div>
+  </div>
+
+    <!-- Modal for Info Paslon2 -->
+<div class="modal fade" id="myModalIn2">
+    <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h1 style="text-align: center;">VISI & MISI <br>
+                      PASANGAN CALON KETUA DAN WAKIL KETUA <br>
+                      NOMOR URUT 2
+                  </h1>
+              </div>
+              <div class="modal-body">
+                  <p>VISI : <br>
+                      "Menjadikan Himpunan Mahasiswa Informatika yang mengedepankan solidaritas
+                      dan keunggulan berdasarkan pengetahuan dan akhlak mulia". <br>
+                      <br>
+                      MISI : <br>
+                      1.Mempererat relasi mahasiswa Informatika baik relasi internal <br>
+                      antara mahasiswa Informatika maupun relasi eksternal.<br>
+                      <br>
+                      2. Menyalurkan aspirasi seluruh mahasiswa Informatika yang <br>
+                      bersifat konstruktif. <br>
+                      <br>
+                      3. Membangun sumber daya mahasiswa Informatika agar memiliki daya saing dalam hal akademik maupun non-akademik.
+                  </p>
+              </div>
+              <div class="modal-footer">
+                  <button class="buttonIn2" data-dismiss="modal">Kembali</button>
+              </div>
+          </div>
+    </div>
+</div>
+
+    <!--Modal for Confirm-->
+<div class="modal fade" id="myModalCon" style="padding: 190px 0px 0px 0px;">
+    <div class="modal-dialog" style="width: 320px; height: 280px;">
+          <div class="modal-content">
+              <div class="modal-header" style="padding: 25px 0px 10px 40px;">
+                  <h2 style="color: #ECEAE1; font-size: 25px;">
+                    Konfirmasi Pemilihan
+                  </h2>
+              </div>
+              <div class="modal-body" style="padding: 10px 0px 10px 0px; font-size: 100px;">
+                  <p style="text-align: center; font-size: 22px; font-weight: 100;">Apakah anda yakin untuk <br>
+                     memilih paslon ini?
+                  </p>
+              </div>
+              <div class="modal-footer">
+                  <button class="buttonCancel" style="background: #ECEAE1; margin-right: 70px;
+                  border-radius: 7px; font-family: 'Segoe UI',sans-serif; width: 90px;
+                  font-style: normal; font-weight: 500; font-size: 15px;
+                  line-height: 35px; letter-spacing: 0.05em;" data-dismiss="modal">Batalkan</button>
+
+                  <button class="buttonCon" style="background: #ECEAE1; margin-right: 20px;
+                  border-radius: 7px; font-family: 'Segoe UI',sans-serif; width: 90px;
+                  font-style: normal; font-weight: 500; font-size: 15px;
+                  line-height: 35px; letter-spacing: 0.05em;">Ya</button>
+              </div>
+          </div>
+    </div>
+</div>
+</body>
+</html>
