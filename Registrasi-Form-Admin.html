@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrasi Form Admin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="regisformadmin.css">    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</head>
+<body onload="" style="background-color: #E2EEFC;">
+    <div class="header">
+        <div class="head">
+            Registrasi Form Admin
+        </div>
+        <div class="sub-head">
+            Silahkan Daftarkan Identitas Anda
+        </div> 
+        <img id="telU" src="tel-u.png" alt="">   
+        <img id="himaIF" src="hima-if.png" alt="">
+    </div>
+    <div class="form">
+        <div class="form-group">
+            <p id="username">Username</p>
+            <div class="input-username">
+                <input type="text" class="input" id="uname">
+            </div>
+        </div>
+        <div class="form-group">
+            <p id="nama">Nama</p>
+            <div class="input-nama">
+                <input type="text" class="input" id="name">
+            </div>
+        </div>
+        <div class="form-group">
+            <p id="email">Email</p>
+            <div class="input-email">
+                <input type="text" class="input" id="mail">
+            </div>
+        </div>
+        <div class="form-group">
+            <p id="pass">Password</p>
+            <div class="input-pass">
+                <input type="password" class="input" id="pw">
+            </div>
+        </div>
+        <div class="form-btn">
+            <button id="btnKembali" type="submit">Kembali</button>
+            <button id="btnDaftar" type="submit" data-toggle="modal" data-target="#modalReg">Daftar</button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalReg">
+        <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h1>Berhasil!
+                      </h1>
+                  </div>
+                  <div class="modal-body">
+                      <p>Anda telah terdaftar sebagai Admin,
+                          Silahkan mengecek email untuk melakukan verifikasi.
+                      </p>
+                  </div>
+                  <div class="modal-footer">
+                      <a href="Registrasi-Form-Admin.html">OK</a>
+                  </div>
+              </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("btnKembali").onclick = function () {
+            location.href = "Registrasi Admin.html";
+        };
+    </script>
+
+</body>
+</html>
