@@ -13,29 +13,29 @@ html,body
     overflow-x: hidden; 
 }
 .img {
-    position: absolute;
-    width: 983px;
-    height: 500px;
-    right: 457px;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    /* right: 457px; */
     left: 0.1px;
     bottom: 350px;
-    top: 349px;
+    top: 249px;
     z-index: -1;
-    background: url(fix.jpg);
     flex-wrap: wrap;
+    /* border: 1px solid black; */
 }
 
-.container {
+/* .container {
     display: flex;
     height: 100vh;
-}
+} */
 
 #head {
-    position: absolute;
-    width: 60%;
-    height: 353px;
+    position: fixed;
+    width: 30%;
+    height: auto;
     left: 55px;
-    top: 31px;
+    top: 11px;
     font-family: 'Segoe UI', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -43,28 +43,25 @@ html,body
     line-height: 120px;
     letter-spacing: 0.2em;
     color: #282828;
+    /* border: 1px solid black; */
 }
 
-.login-container .col-md-4{
+.login-container {
     position: absolute;
-    width: 457px;
-    height: 850px;
+    width: 40%;
+    height: 100%;
     left: 983px;
-    /* right: 100px; */
     top: 0px;
     flex-wrap: wrap;
     background-color: #CFE0E8;
-    /* box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25); */
     display: flex;
     justify-content: center;
     overflow: hidden;
 }
 
-#welcome {
+form #welcome {
     position: absolute;
-    width: 292px;
-    height: 128px;
-    left: 1029px;
+    left: 50px;
     margin-top: 137px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
@@ -76,11 +73,11 @@ html,body
     color: #000000;
 }
 
-#cu {
+#contactUs a {
     position: absolute;
     width: 116px;
     height: 32px;
-    left: 1158px;
+    left: 180px;
     top: 660px;
 
     font-family: 'Segoe UI', sans-serif;
@@ -90,7 +87,6 @@ html,body
     line-height: 32px;
  
     color: #282828;
-
 }
 
 button[type="submit"]{
@@ -104,19 +100,19 @@ button[type="submit"]{
     position: absolute;
     width: 367px;
     height: 79px;
-    left: 1028px;
-    top: 558px;
+    left: 50px;
+    top: 520px;
     border: 1px solid black;
     background: #000000;
     box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 
-input[type="text"]  {
+.form-group #nim  {
     position: absolute;
     width: 367px;
     height: 50px;
-    left: 1028px;
+    left: 50px;
     top: 326px;
     font-family: 'Segoe UI', sans-serif;
     font-style: normal;
@@ -131,7 +127,7 @@ input[type="text"]  {
     border-radius: 8px;
 }
 
-input[type="password"] {
+.form-group #token {
     font-family: 'Segoe UI', sans-serif;
     font-size: 27px;
     font-weight: 500;
@@ -140,7 +136,7 @@ input[type="password"] {
     position: absolute;
     width: 367px;
     height: 50px;
-    left: 1028px;
+    left: 50px;
     top: 413px;
     border: 1px solid white;
     background: #FFFFFF;

@@ -6,11 +6,12 @@
 
 html,body
 {
-    width: 100%;
+    width: 0;
     height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    background-color:#CFE0E8;
 }
 
 .header {
@@ -27,15 +28,7 @@ html,body
     position: absolute;
     width: 135px;
     height: 135px;
-    left: 1085px;
-    top: 10px;
-}
-
-#himaIF {
-    position: absolute;
-    width: 135px;
-    height: 135px;
-    left: 1241px;
+    left: 1240px;
     top: 10px;
 }
 

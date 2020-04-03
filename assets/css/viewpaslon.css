@@ -6,20 +6,20 @@
 
 html,body
 {
-    width: 100%;
+    width: 0;
     height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    background-color: #CFE0E8;
 }
 
 .header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 180px;
     left: 0px;
     top: 30px;
-    /* border: 1px solid black; */
 }
 
 .head {
@@ -28,6 +28,7 @@ html,body
     height: 180px;
     left: 383px;
     top: 1px;
+    flex-wrap: wrap;
     font-family: 'Segoe UI', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -39,28 +40,27 @@ html,body
 
 }
  #logoTU {
-    position: absolute;
-    max-width: 100%;
-    max-height: 100%;
-    left: 109px;
-    top: -10px;
+    position: fixed;
+    width: 185px;
+    height: 200px;
+    left: 70px;
+    top: 20px;
  }
 
  #logoIF {
      position: absolute;
-     max-width: 100%;
-     max-height: 100%;
-     right: 109px;
-     top: -10px;
+     width: 175px;
+     height: 171px;
+     left: 1165px;
+     top: 2px;
  }
 
  .content {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 499px;
     left: 1px;
     top: 292px;
-    /* border: 1px solid black; */
  }
 
  .paslon-content #pas1 {
@@ -70,7 +70,6 @@ html,body
     left: 99px;
     top: -1px;
     background: #FFFFFF;
-    /* border: 2px solid #282828; */
     box-sizing: border-box;
  }
 
@@ -81,7 +80,6 @@ html,body
     left: 877px;
     top: -1px;
     background: #FFFFFF;
-    /* border: 2px solid #282828; */
     box-sizing: border-box;
  }
 
