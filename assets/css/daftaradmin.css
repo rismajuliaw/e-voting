@@ -45,11 +45,52 @@ html, body {
     margin: 5px 0px;
 }
 
-#sidebar .card {
+#sidebar .adminsection {
+    position: relative;
+    left: 315px;
+    top: 50px;
+    transition: all 500ms linear;
+}
+
+#sidebar.active .adminsection {
+    left: 315px;
+}
+
+#sidebar .adminsection h4 {
+    color: #7E8DA4;
+}
+
+#sidebar .table {
     position: absolute;
-    left: 350px;
-    top: 100px;
-    box-shadow: grey;
+    left: 465px;
+    top: 130px;
+    width: 1100px;
+    transition: all 500ms linear;
+}
+
+#sidebar.active .table {
+    left: 330px;
+}
+
+#sidebar .tabhead {
+    background-color: #8971D0;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#sidebar tbody {
+    font-size: 16px;
+    text-align: center;
+}
+
+#sidebar .tr1 {
+    background-color: whitesmoke;
+    color: #5E738D;
+}
+
+#sidebar .tr2 {
+    background-color: rgba(221, 214, 241, 0.918);
+    color: #5E738D;
 }
 
 #content .superadm-btn {

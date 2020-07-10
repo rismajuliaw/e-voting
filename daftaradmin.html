@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <title>Realtime Count</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="assets/css/daftaradmin.css">
+    <link rel="stylesheet" media="screen" href="assets/css/daftaradmin.css" />
+    <!-- Bootstrap & JS -->
+      <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+      <script type="text/javascript" src="assets/script/jquery.js"></script>
+      <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="assets/script/popper.js"></script>
+      <script type="text/javascript" src="assets/navsidebar.js"></script>
+</head>
+<body>
+    <div id="sidebar">
+        <button>
+            <div class="toggle-btn" onClick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button> 
+                <div class="col-md-12 adminsection">
+                    <h4>Daftar Admin</h4>
+                </div>
+                <table class="table table-responsive-md">
+                    <thead class="tabhead">
+                      <tr>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Event</th>
+                      </tr>
+                    </thead>
+                        <tbody>
+                            <tr class="tr1">
+                                <td>Iqbaal Diafakhri Ramadhan</td>
+                                <td>iqbaal.e@student.telkomuniversity.ac.id</td>
+                                <td>PERMIF</td>
+                            </tr>
+                            <tr class="tr2">
+                                <td>Tasya Kamila</td>
+                                <td>tasyakamila@student.telkomuniv.ac.id</td>
+                                <td>PERMIF</td>
+                            </tr>
+                        </tbody>
+                </table>
+        <div class="p-3"></div>
+        <div class="navbar-brand">
+            <img src="assets/img/logofix.png">
+        </div>
+        <ul>
+            <li class="active">
+                <img src="assets/img/event.png">
+                <a href="dbsuperadm1.html">Daftar Event</a>
+            </li>
+            <li>
+                <img src="assets/img/admin.png">
+                <a href="#">Daftar Admin</a>
+            </li>
+            <li>
+                <img src="assets/img/logout.png">
+                <a href="loginsuperadmin.html">Logout</a>
+            </li>
+        </ul>
+</div>
+<div id="content">
+    <div class="shadow-sm container-fluid bg-top">
+        <div class="col-md auto">
+            <div class="superadm-btn">
+                <img src="assets/img/superadmin.jpeg" class="rounded-circle">
+                    <div class="superadmalt">
+                        Super Admin
+                    </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<script type="text/javascript">
+    function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle('active');
+    }
+</script>
+
+
+</body>
+</html>
