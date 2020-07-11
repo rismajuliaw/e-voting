@@ -1,0 +1,179 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-color: #F6F7FC;
+}
+
+#sidebar .navbar-brand img {
+    height: 50px;
+    float: left;
+    margin: -80px 70px 0px 15px;
+}
+
+#sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #292b2c;
+    left: -300px;
+    transition: all 500ms linear;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar .headform {
+    position: relative;
+    left: 315px;
+    top: 50px;
+}
+
+#sidebar .headform h4 {
+    color: #5E738D;
+}
+
+#sidebar .formadm {
+    position: absolute;
+    border: 1px solid lightgray;
+    background-color: white;
+    width: 1080px;
+    height: 420px;
+    left: 480px;
+    top: 150px;
+    transition: all 500ms linear;
+
+}
+
+#sidebar.active .formadm {
+    left: 332px;
+}
+
+#sidebar .formadm h6 {
+    margin: 20px 0px 0px 30px;
+    font-weight: 420;
+    color: #7E8DA4;
+}
+
+#sidebar .form-group1 {
+    margin: 25px 0px 0px 100px;
+}
+
+#sidebar .form-group2 {
+    margin: 25px 0px 0px 100px;
+}
+
+#sidebar .form-group3 {
+    margin: 25px 0px 0px 100px;
+}
+
+#sidebar .form-group4 {
+    margin: 25px 0px 0px 100px;
+}
+
+#sidebar .form-group5 {
+    margin: 52px 0px 0px 850px;
+}
+
+#sidebar .divide-row {
+    border-bottom: 1px solid lightgray;
+    width: 1010px;
+    margin: 13px 0px 0px 30px;
+}
+
+#sidebar .form-group7 button {
+    margin-left: 15px;
+    background-color: #8971D0;
+    color: whitesmoke;
+}
+
+.col-form-label {
+    color: #7E8DA4;
+}
+#prevBtn {
+    margin-left: 15px;
+    background-color: rgba(109, 125, 146, 0.6);
+    color: white;
+}
+
+#submitEvt {
+    margin-left: 15px;
+    background-color: #5E738D;
+    color: white;
+}
+
+
+#sidebar ul li {
+    color: #7E8DA4;
+    list-style: none;
+    padding: 15px 10px;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 330px;
+    top: 10px;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #5E738D;
+    margin: 5px 0px;
+}
+
+
+
+#content .superadm-btn {
+    position: absolute;
+    left: 1250px;
+    top: 10px;
+    transition: all 500ms linear;
+    font-size: small;
+}
+
+#content .superadm-btn img {
+    position: absolute;
+    top: 0px;
+    height: 35px;
+}
+
+#content .superadm-btn .superadmalt {
+
+    width: 100px;
+    left: 50px;
+    font-size: 15px;
+    position: absolute;
+    top: 8px;
+    color: grey;
+}
+
+
+#sidebar.active .superadm-btn {
+    left: 1250px;
+}
+
+ul li a {
+    margin-left: 15px;
+    font-size: 15px;
+    color: #7E8DA4;
+}
+
+li img {
+    margin-left: 10px;
+    height: 23px;
+}
+
+#content .container-fluid {
+    width: 100%;
+    height: 60px;
+}
+
+#sidebar ul li a:hover {
+    color: whitesmoke;
+}
+

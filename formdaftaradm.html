@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <title>Form Daftar Event</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="assets/css/formdaftaradm.css">
+    <link rel="stylesheet" media="screen" href="assets/css/formdaftaradm.css" />
+    <!-- Bootstrap & JS -->
+      <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+      <script type="text/javascript" src="assets/script/jquery.js"></script>
+      <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="assets/script/popper.js"></script>
+      <script type="text/javascript" src="assets/navsidebar.js"></script>
+</head>
+<body>
+    <div id="sidebar">
+        <button>
+            <div class="toggle-btn" onClick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button> 
+                <div class="col-md-12 headform">
+                    <h4>Form Pendaftaran</h4>
+                </div>
+                <div class="formadm">
+                    <form action="" method="">
+                        <h6>Form Pendaftaran Admin</h6>
+                        <div class="divide-row"></div>
+                            <div class="form-group1 row">
+                                <label for="inputIDacara" class="col-sm-2 col-form-label">NIM</label>
+                                <div class="col-sm-8 IDacara">
+                                  <input type="number" class="form-control" id="inputIDAcara" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group2 row">
+                                <label for="inputNamaAcara" class="col-sm-2 col-form-label">Username</label>
+                                <div class="col-sm-8 Nmacara">
+                                  <input type="text" class="form-control" id="inputNamaAcara" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group3 row">
+                                <label for="inputBeginDate" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-8 beginDate">
+                                  <input type="text" class="form-control" id="inputBegindate" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group4 row">
+                                <label for="inputBeginTime" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-8 beginTime">
+                                  <input type="password" class="form-control" id="inputBegintime" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group5 row">
+                                <button type="button" class="btn btn-sm" id="prevBtn">Previous</button>
+                                <button type="button" class="btn btn-sm" id="submitEvt">Submit</button>
+                            </div>
+                    </form>
+                </div>
+               
+        <div class="p-3"></div>
+        <div class="navbar-brand">
+            <img src="assets/img/logofix.png">
+        </div>
+        <ul>
+            <li class="active">
+                <img src="assets/img/event.png">
+                <a href="dbsuperadm1.html">Daftar Event</a>
+            </li>
+            <li>
+                <img src="assets/img/admin.png">
+                <a href="#">Daftar Admin</a>
+            </li>
+            <li>
+                <img src="assets/img/logout.png">
+                <a href="loginsuperadmin.html">Logout</a>
+            </li>
+        </ul>
+</div>
+<div id="content">
+    <div class="shadow-sm container-fluid bg-top">
+        <div class="col-md auto">
+            <div class="superadm-btn">
+                <img src="assets/img/superadmin.jpeg" class="rounded-circle">
+                    <div class="superadmalt">
+                        Super Admin
+                    </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<script type="text/javascript">
+    function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle('active');
+    }
+</script>
+
+
+</body>
+</html>
