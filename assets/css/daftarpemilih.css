@@ -1,0 +1,180 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-color: #F6F7FC;
+}
+
+#sidebar .navbar-brand img {
+    height: 50px;
+    float: left;
+    margin: -80px 70px 0px 15px;
+}
+
+#sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #292b2c;
+    left: -300px;
+    transition: all 500ms linear;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar .headform {
+    position: relative;
+    left: 315px;
+    top: 50px;
+}
+
+#sidebar .headform h4 {
+    color: #5E738D;
+}
+
+#sidebar .formAdd {
+    position: absolute;
+    border: 1px solid lightgray;
+    background-color: white;
+    width: 1100px;
+    height: 150px;
+    left: 330px;
+    top: 150px;
+    transition: all 500ms linear;
+
+}
+
+ion-icon {
+    font-size: 16px;
+    
+}
+
+.addBtn button {
+    background-color: #8971D0;
+    color: white;
+    font-size: 13px;
+    width: 100px;
+    margin-left: -18px;
+}
+
+#sidebar .TabPemilih {
+    position: absolute;
+    background-color: white;
+    width: 1100px;
+    height: 230px;
+    left: 330px;
+    top: 350px;
+    transition: all 500ms linear;
+}
+
+.TabPemilih table {
+    text-align: center;
+    color: #7E8DA4;
+}
+
+.TabPemilih button {
+    color: white;
+    font-size: 13px;
+}
+
+.TabPemilih .trash {
+    color: #8971D0;
+}
+
+#sidebar.active .formAdd {
+    left: 332px;
+}
+
+#sidebar .formAdd h6 {
+    margin: 20px 0px 0px 30px;
+    font-weight: 420;
+    color: #7E8DA4;
+}
+
+#sidebar .form-group {
+    margin: 25px 0px 0px 30px;
+}
+
+#sidebar .divide-row {
+    border-bottom: 1px solid lightgray;
+    width: 1045px;
+    margin: 13px 0px 0px 30px;
+}
+
+.col-form-label {
+    color: #7E8DA4;
+}
+
+#sidebar ul li {
+    color: #7E8DA4;
+    list-style: none;
+    padding: 15px 10px;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 330px;
+    top: 10px;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #5E738D;
+    margin: 5px 0px;
+}
+
+#content .superadm-btn {
+    position: absolute;
+    left: 1250px;
+    top: 10px;
+    transition: all 500ms linear;
+    font-size: small;
+}
+
+#content .superadm-btn img {
+    position: absolute;
+    top: 0px;
+    height: 35px;
+}
+
+#content .superadm-btn .superadmalt {
+
+    width: 100px;
+    left: 50px;
+    font-size: 15px;
+    position: absolute;
+    top: 8px;
+    color: grey;
+}
+
+
+#sidebar.active .superadm-btn {
+    left: 1250px;
+}
+
+ul li a {
+    margin-left: 15px;
+    font-size: 15px;
+    color: #7E8DA4;
+}
+
+li img {
+    margin-left: 10px;
+    height: 23px;
+}
+
+#content .container-fluid {
+    width: 100%;
+    height: 60px;
+}
+
+#sidebar ul li a:hover {
+    color: whitesmoke;
+}
+
