@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <title>Detail Event</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="assets/css/dbevent.css">
+    <link rel="stylesheet" media="screen" href="assets/css/dbevent.css" />
+    <!-- Bootstrap & JS -->
+      <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+      <script type="text/javascript" src="assets/script/jquery.js"></script>
+      <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="assets/script/popper.js"></script>
+      <script type="text/javascript" src="assets/navsidebar.js"></script>
+</head>
+<body>
+    <div id="sidebar">
+        <button>
+            <div class="toggle-btn" onClick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button> 
+                <div class="col-md-12">
+                    <div class="container">
+                        <img src="assets/img/permif.png">
+                        <div class="detailevt">
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <label>Nama Acara</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="nmAcara">PERMIF </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label>Organisasi</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="nmOrganisasi">HIMA IF</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Tanggal Mulai</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="tglMulai">27/11/2022</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Waktu Mulai</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="waktuMulai">10.00</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Tanggal Berakhir</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="tglEnd">30/11/2022</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Waktu Berakhir</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="waktuEnd">17.00</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Admin</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="idAdmin">1301193409</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-3"></div>
+                <div class="navbar-brand">
+                    <img src="assets/img/logofix.png">
+                </div>
+                <ul>
+                    <li class="active">
+                        <img src="assets/img/event.png">
+                        <a href="dbsuperadm1.html">Daftar Event</a>
+                    </li>
+                    <li>
+                        <img src="assets/img/admin.png">
+                        <a href="#">Daftar Admin</a>
+                    </li>
+                    <li>
+                        <img src="assets/img/logout.png">
+                        <a href="loginsuperadmin.html">Logout</a>
+                    </li>
+                </ul>
+        </div>
+        <div id="content">
+            <div class="shadow-sm container-fluid bg-top">
+                <div class="col-md auto">
+                    <div class="superadm-btn">
+                        <img src="assets/img/superadmin.jpeg" class="rounded-circle">
+                            <div class="superadmalt">
+                                Super Admin
+                            </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        
+        <script type="text/javascript">
+            function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle('active');
+            }
+        </script>
+        
+        
+        </body>
+        </html>
