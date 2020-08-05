@@ -51,6 +51,15 @@ html, body {
     left: 450px;
     top: 200px;
     color: #7E8DA4;
+    transition: all 500ms linear;
+}
+
+#sidebar.active .card {
+    left: 350px;
+}
+
+#sidebar.active .card2 {
+    left: 1000px;
 }
 
 #sidebar .card2 {
@@ -59,6 +68,7 @@ html, body {
     left: 1150px;
     top: 200px;
     color: #7E8DA4;
+    transition: all 500ms linear;
 }
 
 #sidebar .head-title {
@@ -68,6 +78,11 @@ html, body {
     left: 750px;
     top: 100px;
     color: #7E8DA4;
+    transition: all 500ms linear;
+}
+
+#sidebar.active .head-title {
+    left: 650px;
 }
 
 .card-img-top {
