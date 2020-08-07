@@ -108,6 +108,21 @@ html, body {
     color: white;
 }
 
+.vm-modal {
+    color: #7E8DA4;
+    margin-top: 150px;
+}
+
+.modalConfirm {
+    top: 100px;
+    color: #7E8DA4;
+}
+
+.modalConfirm .btn-submitvote {
+    background-color: rgb(176, 181, 189);
+    color: white;
+}
+
 #content .superadm-btn {
     position: absolute;
     left: 1250px;

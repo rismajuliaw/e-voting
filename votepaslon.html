@@ -10,7 +10,6 @@
       <script type="text/javascript" src="assets/script/jquery.js"></script>
       <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="assets/script/popper.js"></script>
-      <script type="text/javascript" src="assets/navsidebar.js"></script>
 </head>
 <body>
     <div id="sidebar">
@@ -42,8 +41,8 @@
                                         </div>
                                     </div>
                                     <div class="p-5 button-paslon">
-                                        <a href="#" class="btn btn-visimisi"><ion-icon name="reader-outline"></ion-icon>Visi Misi</a>
-                                        <a href="#" class="btn btn-vote"><ion-icon name="thumbs-up-outline"></ion-icon>Vote</a>
+                                        <button type="submit" id="btnInfo1" data-toggle="modal" data-target="#myModalIn1" class="btn btn-visimisi"><ion-icon name="reader-outline"></ion-icon>Visi Misi</button>
+                                        <button type="submit" id="btnVote1" data-toggle="modal" data-target="#confirmVote" class="btn btn-vote"><ion-icon name="thumbs-up-outline"></ion-icon>Vote</button>
                                     </div>
                                 </div>
                             </div>
@@ -65,8 +64,8 @@
                                         </div>
                                     </div>
                                     <div class="p-5 button-paslon">
-                                        <a href="#" class="btn btn-visimisi"><ion-icon name="reader-outline"></ion-icon>Visi Misi</a>
-                                        <a href="#" class="btn btn-vote"><ion-icon name="thumbs-up-outline"></ion-icon>Vote</a>
+                                        <button type="submit" id="btnInfo2" data-toggle="modal" data-target="#myModalIn2" class="btn btn-visimisi"><ion-icon name="reader-outline"></ion-icon>Visi Misi</button>
+                                        <button type="submit" id="btnVote2" data-toggle="modal" data-target="#confirmVote" class="btn btn-vote"><ion-icon name="thumbs-up-outline"></ion-icon>Vote</button>
                                     </div>
                                 </div>
                             </div>
@@ -102,6 +101,47 @@
         </div>
                 
     </div>
+
+     <!-- Modal for Info Paslon1 -->
+     <div class="modal fade vm-modal" id="myModalIn1">
+        <div class="modal-dialog modal-m">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>
+                            Visi Misi
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                    <div class="modal-body">
+                        <p style="text-align: center;">PASANGAN CALON NOMOR URUT 1</p>
+                        <div class="col-md-3"> 
+                            <p>Visi</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p>Menjadikan HIMAIF yang bersatu, dan berkualitas demi tercapainya visi misi program
+                                studi informatika
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>Misi</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p>1. Mempererat hubungan sesama mahasiswa informatika.<br>
+                               2. Menjaga keharmonisan dan sinegritas kepada seluruh elemen
+                                yang ada di informatika.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script type="text/javascript">
         function toggleSidebar() {
