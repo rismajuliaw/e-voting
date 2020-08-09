@@ -10,6 +10,7 @@ html, body {
     height: 50px;
     float: left;
     margin: -80px 70px 0px 15px;
+    z-index: 2;
 }
 
 #sidebar {
@@ -19,6 +20,7 @@ html, body {
     background: #292b2c;
     left: -300px;
     transition: all 500ms linear;
+
 }
 
 #sidebar.active {

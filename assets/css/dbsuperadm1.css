@@ -87,9 +87,8 @@ ul li a {
     color: #7E8DA4;
 }
 
-li img {
-    margin-left: 10px;
-    height: 23px;
+.active li {
+    color: #F6F7FC;
 }
 
 #content .container-fluid {
