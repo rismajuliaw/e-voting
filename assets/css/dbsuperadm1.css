@@ -142,6 +142,25 @@ ul.CTAs a {
 #content .card {
     left: 50px;
     top: 0px;
+    border: none;
+
+}
+
+#content .cards li {
+    list-style: none;
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+#content .cardAdd {
+    top: -120px;
+}
+
+.cardAdd h1 {
+    font-size: 80px;
+    color: #7E8DA4;
+    text-align: center;
+    margin-top: 50px;
 }
 
 /* ---------------------------------------------------
