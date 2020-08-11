@@ -139,6 +139,15 @@ ul.CTAs a {
     transition: all 500ms linear;
 }
 
+#paslonCon .container-fluid {    
+    transition: all 0.3s;
+}
+
+#paslonCon.active {
+
+    margin-left: 100px;
+}
+
 #content .card {
     height: 450px;
     margin-left: 50px;

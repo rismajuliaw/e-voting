@@ -139,6 +139,14 @@ ul.CTAs a {
     transition: all 500ms linear;
 }
 
+#realtime {
+    transition: all 0.3s;
+}
+
+#realtime.active {
+    margin-left: 100px;
+}
+
 .event img {
     height: 190px;
     margin: -25px 0px 0px 520px;
