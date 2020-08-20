@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <head>
-    <title>Home | Super Admin</title>
+    <title>Super Admin</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="assets/css/homesuperadm.css">
-    <link rel="stylesheet" media="screen" href="assets/css/homesuperadm.css" />
+    <link type="text/css" rel="stylesheet" href="/assets/css/homesuperadm.css">
+    <link rel="stylesheet" media="screen" href="/assets/css/homesuperadm.css" />
     <!-- Bootstrap & JS -->
-      <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-      <script type="text/javascript" src="assets/script/jquery.js"></script>
-      <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="assets/script/popper.js"></script>
+      <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+      <script type="text/javascript" src="/assets/script/jquery.js"></script>
+      <script type="text/javascript" src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="/assets/script/popper.js"></script>
 </head>
 <body>
             <div class="wrapper">
                 <!-- Sidebar -->
                 <nav id="sidebar">
                     <div class="sidebar-header">
-                        <img src="assets/img/logofix.png" style="height: 50px;">
+                        <img src="/assets/img/logofix.png" style="height: 50px;">
                     </div>
 
                     <ul class="list-unstyled components">
@@ -24,27 +24,10 @@
                             <a href="#"><ion-icon name="home-outline" class="col-1" style="height: 22px;"></ion-icon>Home</a>
                         </li>
                         <li>
-                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><ion-icon name="clipboard-outline" class="col-1" style="height: 22px;"></ion-icon>Daftar Acara</a>
-                            <ul class="collapse list-unstyled" id="pageSubmenu">
-                                <li>
-                                    <a href="#">Realtime Count</a>
-                                </li>
-                                <li>
-                                    <a href="#">Daftar Paslon</a>
-                                </li>
-                                <li>
-                                    <a href="#">Daftar Pemilih</a>
-                                </li>
-                            </ul>
+                            <a href="#"><ion-icon name="thumbs-up-outline" class="col-1" style="height: 22px;"></ion-icon>Vote</a>
                         </li>
                         <li>
-                            <a href="#"><ion-icon name="person-outline" class="col-1" style="height: 22px;"></ion-icon>Daftar Admin</a>
-                        </li>
-                        <li>
-                            <a href="#"><ion-icon name="people-circle-outline" class="col-1" style="height: 22px;"></ion-icon>Daftar Organisasi</a>
-                        </li>
-                        <li>
-                            <a href="#"><ion-icon name="log-out-outline" class="col-1" style="height: 22px;"></ion-icon>Logout</a>
+                            <a href="/super/Logout"><ion-icon name="log-out-outline" class="col-1" style="height: 22px;"></ion-icon>Logout</a>
                         </li>
                     </ul>
                 </nav>
@@ -52,14 +35,14 @@
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <div class="container-fluid">
                             <button type="button" id="sidebarCollapse" class="btn">
-                                <img src="assets/img/menu.png">
+                                <img src="/assets/img/menu.png">
                             </button>
 
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="nav navbar-nav ml-auto">
                                     <li class="nav-item" style="color:#7E8DA4;">
-                                        <img src="assets/img/superadmin.jpeg" style="height: 30px;" class="rounded-circle">
-                                        Super Admin
+                                        <img src="/assets/img/pemilih.png" style="height: 30px;" class="rounded-circle">
+                                        <%= name %>
                                     </li>
                             </div>
                         </div>
@@ -76,12 +59,12 @@
                                         <div class="carousel-inner">
                                             <div class="carousel-item active" id="caro1">
                                             <div class="container1">
-                                                <img src="assets/img/Frame 1.v1.png">
+                                                <img src="/assets/img/Frame 1.v1.png">
                                             </div>
                                             </div>
                                             <div class="carousel-item">
                                             <div class="container2">
-                                                <img src="assets/img/Frame 2.v1.png">
+                                                <img src="/assets/img/Frame 2.v1.png">
                                             </div>
                                             </div>
                                         </div>
@@ -103,7 +86,7 @@
                             <li>
                                 <a href="#">
                                     <div class="shadow card card1" style="width: 20rem;">
-                                        <img class="card-img-top" style="height: 100px; width: 100px; text-align: center;" src="assets/img/tatacara.png" alt="Card logo event">
+                                        <img class="card-img-top" style="height: 100px; width: 100px; text-align: center;" src="/assets/img/tatacara.png" alt="Card logo event">
                                         <div class="p-4 card-body">
                                             <h3 class="card-title" style="text-align: center;">TATA CARA</h3>
                                             <div class="col-md-12">
@@ -118,9 +101,9 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/super/events">
                                     <div class="shadow card card2" style="width: 20rem;">
-                                        <img class="card-img-top" style="height: 100px; width: 100px; text-align: center;" src="assets/img/calendar.png" alt="Card logo event">
+                                        <img class="card-img-top" style="height: 100px; width: 100px; text-align: center;" src="/assets/img/calendar.png" alt="Card logo event">
                                         <div class="p-4 card-body">
                                             <h3 class="card-title" style="text-align: center;">ACARA</h3>
                                             <div class="col-md-12">
@@ -137,7 +120,7 @@
                             <li>
                                 <a href="#">
                                     <div class="shadow card card3" style="width: 20rem;">
-                                        <img class="card-img-top" style="height: 100px; width: 100px; text-align: center;" src="assets/img/tips.png" alt="Card logo event">
+                                        <img class="card-img-top" style="height: 100px; width: 100px; text-align: center;" src="/assets/img/tips.png" alt="Card logo event">
                                         <div class="p-4 card-body">
                                             <h3 class="card-title" style="text-align: center;">TIPS</h3>
                                             <div class="col-md-12">
@@ -162,7 +145,7 @@
                             <div class="p-5 member-card">
                                 <li>
                                 <div class="card mem-card" style="width: 20rem;">
-                                    <img class="card-img-top" style="height: 100px; width: 100px; text-align: center;" src="assets/img/icon bagas.png" alt="Card logo event">
+                                    <img class="card-img-top" style="height: 100px; width: 100px; text-align: center;" src="/assets/img/icon bagas.png" alt="Card logo event">
                                     <div class="card-body bagas">
                                         <h4 class="card-title">Bagas Tri Wibowo</h4>
                                         <div class="col-md-12">
@@ -177,7 +160,7 @@
                                 </li>
                                 <li>
                                     <div class="card mem-card" style="width: 20rem;">
-                                        <img class="card-img-top" style="height: 100px; width: 100px; text-align: center;" src="assets/img/icon rahma.png" alt="Card logo event">
+                                        <img class="card-img-top" style="height: 100px; width: 100px; text-align: center;" src="/assets/img/icon rahma.png" alt="Card logo event">
                                         <div class="card-body rahma">
                                             <h4 class="card-title">Rahma Fadhilah</h4>
                                             <div class="col-md-12">
@@ -192,7 +175,7 @@
                                 </li>
                                 <li>
                                     <div class="card mem-card" style="width: 20rem;">
-                                        <img class="card-img-top" style="height: 100px; width: 100px; text-align: center;" src="assets/img/icon risma.png" alt="Card logo event">
+                                        <img class="card-img-top" style="height: 100px; width: 100px; text-align: center;" src="/assets/img/icon risma.png" alt="Card logo event">
                                         <div class="card-body risma">
                                             <h4 class="card-title">Risma Julia W</h4>
                                             <div class="col-md-12">

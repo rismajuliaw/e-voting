@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <head>
-    <title>Daftar Organisasi</title>
+    <title>Super Admin</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="assets/css/daftarorganisasi.css">
-    <link rel="stylesheet" media="screen" href="assets/css/daftarorganisasi.css" />
+    <link type="text/css" rel="stylesheet" href="/assets/css/daftarpemilih.css">
+    <link rel="stylesheet" media="screen" href="/assets/css/daftarpemilih.css" />
     <!-- Bootstrap & JS -->
-      <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-      <script type="text/javascript" src="assets/script/jquery.js"></script>
-      <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="assets/script/popper.js"></script>
+      <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+      <script type="text/javascript" src="/assets/script/jquery.js"></script>
+      <script type="text/javascript" src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="/assets/script/popper.js"></script>
 </head>
 <body>
             <div class="wrapper">
                 <!-- Sidebar -->
                 <nav id="sidebar">
                     <div class="sidebar-header">
-                        <img src="assets/img/logofix.png" style="height: 50px;">
+                        <img src="/assets/img/logofix.png" style="height: 50px;">
                     </div>
 
                     <ul class="list-unstyled components">
                         <li>
                             <a href="#"><ion-icon name="home-outline" class="col-1" style="height: 22px;"></ion-icon>Home</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><ion-icon name="clipboard-outline" class="col-1" style="height: 22px;"></ion-icon>Daftar Acara</a>
                             <ul class="collapse list-unstyled" id="pageSubmenu">
                                 <li>
@@ -32,7 +32,7 @@
                                 <li>
                                     <a href="#">Daftar Paslon</a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="#">Daftar Pemilih</a>
                                 </li>
                             </ul>
@@ -40,8 +40,8 @@
                         <li>
                             <a href="#"><ion-icon name="person-outline" class="col-1" style="height: 22px;"></ion-icon>Daftar Admin</a>
                         </li>
-                        <li class="active">
-                            <a href="#"><ion-icon name="people-circle-outline" class="col-1" style="height: 22px;"></ion-icon>Daftar Organisasi</a>
+                        <li>
+                            <a href="#"><ion-icon name="people-outline" class="col-1" style="height: 22px;"></ion-icon>Daftar Organisasi</a>
                         </li>
                         <li>
                             <a href="#"><ion-icon name="log-out-outline" class="col-1" style="height: 22px;"></ion-icon>Logout</a>
@@ -52,13 +52,13 @@
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <div class="container-fluid">
                             <button type="button" id="sidebarCollapse" class="btn">
-                                <img src="assets/img/menu.png">
+                                <img src="/assets/img/menu.png">
                             </button>
 
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="nav navbar-nav ml-auto">
                                     <li class="nav-item" style="color:#7E8DA4;">
-                                        <img src="assets/img/superadmin.jpeg" style="height: 30px;" class="rounded-circle">
+                                        <img src="/assets/img/superadmin.jpeg" style="height: 30px;" class="rounded-circle">
                                         Super Admin
                                     </li>
                             </div>
@@ -66,20 +66,20 @@
                     </nav>
                     <div class="container-fluid">
                         <div class="col-md-12 headform">
-                            <h4>Daftar Organisasi</h4>
+                            <h4>Daftar Pemilih</h4>
                         </div>
                         <div class="formAdd">
                             <form action="" method="">
-                                <h6>Add Organisasi</h6>
+                                <h6>Add Pemilih</h6>
                                 <div class="divide-row"></div>
                                     <div class="form-group row">
-                                        <label for="inputOrganisasi" class="col-form-label">Nama</label>
-                                        <div class="col-sm-6 namaOrganisasi">
-                                          <input type="text" class="form-control" id="nmOrganisasi" placeholder="">
+                                        <label for="inputNIM" class="col-form-label">NIM</label>
+                                        <div class="col-sm-4 nim">
+                                          <input type="number" class="form-control" id="inputNIM" placeholder="">
                                         </div>
-                                        <label for="inputEmail" class="col-form-label">Jenis</label>
-                                        <div class="col-sm-4 jenis">
-                                          <input type="text" class="form-control" id="inputJenis" placeholder="">
+                                        <label for="inputEmail" class="col-form-label">Email</label>
+                                        <div class="col-sm-6 email">
+                                          <input type="text" class="form-control" id="inputEmail" placeholder="">
                                         </div>
                                         <div class="col-sm-1 addBtn">
                                             <button type="button" class="btn" class="btn-label col-1"><ion-icon name="add"></ion-icon>Add Row</button>
@@ -88,26 +88,59 @@
                             </form>
                         </div>
         
-                        <div class="TabOrganisasi">
-                            <table class="table table-bordered table-responsive-md">
+                        <div class="TabPemilih">
+                            <table class="table table-bordered table-responsive-lg">
                                 <thead class="tabhead">
                                   <tr>
                                     <th scope="col">No.</th>
                                     <th scope="col">Nama</th>
-                                    <th scope="col">Jenis</th>
+                                    <th scope="col">NIM</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Status</th>
                                     <th scope="col">Action</th>
                                   </tr>
                                 </thead>
                                     <tbody>
                                         <tr class="tr1">
                                             <td>1.</td>
-                                            <td>HIMAIF</td>
-                                            <td>Himpunan</td>
+                                            <td>Bagas Tri Wibowo</td>
+                                            <td>1301194501</td>
+                                            <td>bagas.tri.w07@gmail.com</td>
+                                            <td><button class="btn btn-success">Used</button></td>
                                             <td><button type="button" class="btn btn-light trash"><ion-icon name="trash-outline"></ion-icon></button></td>
                                         </tr>
+                                        <tr class="tr2">
+                                            <td>2.</td>
+                                            <td>Rahma Fadhilah</td>
+                                            <td>130118342</td>
+                                            <td>rahmafma@gmail.com</td>
+                                            <td><button class="btn btn-warning">Unused</button></td>
+                                            <td><button type="button" class="btn btn-light trash"><ion-icon name="trash-outline"></ion-icon></button></td>
+                                        </tr>
+                                        <tr class="tr3">
+                                            <td>3.</td>
+                                            <td>Risma Julia Wardany</td>
+                                            <td>1301184569</td>
+                                            <td>rismajw@gmail.com</td>
+                                            <td><button class="btn btn-success">Used</button></td>
+                                            <td><button type="button" class="btn btn-light trash"><ion-icon name="trash-outline"></ion-icon></button></td>
+                                        </tr>
+                                        <% for(var i=0; i < voters.length; i++) { %>
+                                            <tr class="tr1">
+                                                <td><%= i + 1 %></td>
+                                                <td><%= voters[i].name %></td>
+                                                <td><%= voters[i].nim %></td>
+                                                <td><%= voters[i].email %></td>
+                                                <td><button class="btn btn-success">Used</button></td>
+                                                <td><button type="button" class="btn btn-light trash"><ion-icon name="trash-outline"></ion-icon></button></td>
+                                            </tr>
+                                            <% } %> 
+                                            
+                                            
                                     </tbody>
                             </table>
                         </div>
+        
                     </div>
                 </div>
             </div>
