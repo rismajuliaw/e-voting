@@ -1,0 +1,70 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "namaAcara": "SES",
+      "tglMulai": "06/05/2020",
+      "wktMulai": "07.50",
+      "tglAkhir": "08/05/2020",
+      "wktAkgir": "08.50",
+      "logoEvt": "assets/img/permig.png"
+    },
+    {
+      "namaAcara": "PEMILIHAN KETUA UKM",
+      "tglMulai": "2020-08-29",
+      "wktMulai": "11:30",
+      "tglAkhir": "2020-08-31",
+      "wktAkhir": "2020-08-31",
+      "logoEvt": "C:\\fakepath\\icon risma.png",
+      "id": 2
+    },
+    {
+      "namaAcara": "PEMILIHAN KETUA UKM",
+      "tglMulai": "2020-08-29",
+      "wktMulai": "11:30",
+      "tglAkhir": "2020-08-31",
+      "wktAkhir": "2020-08-31",
+      "logoEvt": "C:\\fakepath\\icon risma.png",
+      "id": 3
+    },
+    {
+      "IDKetua": "",
+      "IDWaketu": "",
+      "IDAcara": "",
+      "noUrut": "",
+      "Visi": "",
+      "Misi": "",
+      "fotoPaslon": "",
+      "id": 4
+    }
+  ],
+  "paslon": [
+    {
+      "id": 1,
+      "IDKetua": "130114",
+      "IDWakil": "130115",
+      "IDAcara": "2",
+      "noUrut": "1",
+      "Visi": "Sejahterakan iF",
+      "Misi": "Bebas",
+      "fotoPaslon": "assets/img/permig.png"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

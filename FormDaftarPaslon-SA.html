@@ -3,26 +3,62 @@
     <title>Form Daftar Paslon</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="/assets/css/formdaftarpaslon.css">
-    <link rel="stylesheet" media="screen" href="/assets/css/formdaftarpaslon.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/formdaftarpaslon.css">
+    <link rel="stylesheet" media="screen" href="assets/css/formdaftarpaslon.css" />
     <!-- Bootstrap & JS -->
-      <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
-      <script type="text/javascript" src="/assets/script/jquery.js"></script>
-      <script type="text/javascript" src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="/assets/script/popper.js"></script>
+      <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+      <script type="text/javascript" src="assets/script/jquery.js"></script>
+      <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="assets/script/popper.js"></script>
 </head>
 <body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="assets/img/logofix.png" style="height: 50px;">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="Home-SA.html"><ion-icon name="home-outline" class="col-1" style="height: 22px;"></ion-icon>Home</a>
+                </li>
+                <li class="active">
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><ion-icon name="clipboard-outline" class="col-1" style="height: 22px;"></ion-icon>Daftar Acara</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="Realtime-SA.html">Realtime Count</a>
+                        </li>
+                        <li>
+                            <a href="DaftarPaslon-SA.html">Daftar Paslon</a>
+                        </li>
+                        <li>
+                            <a href="DaftarPemilih-SA.html">Daftar Pemilih</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="DaftarAdmin-SA.html"><ion-icon name="person-outline" class="col-1" style="height: 22px;"></ion-icon>Daftar Admin</a>
+                </li>
+                <li>
+                    <a href="DaftarOrganisasi-SA.html"><ion-icon name="people-outline" class="col-1" style="height: 22px;"></ion-icon>Daftar Organisasi</a>
+                </li>
+                <li>
+                    <a href="loginsuperadmin.html"><ion-icon name="log-out-outline" class="col-1" style="height: 22px;"></ion-icon>Logout</a>
+                </li>
+            </ul>
+        </nav>
                 <div id="content">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <div class="container-fluid">
                             <button type="button" id="sidebarCollapse" class="btn">
-                                <img src="/assets/img/menu.png">
+                                <img src="assets/img/menu.png">
                             </button>
 
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="nav navbar-nav ml-auto">
                                     <li class="nav-item" style="color:#7E8DA4;">
-                                        <img src="/assets/img/superadmin.jpeg" style="height: 30px;" class="rounded-circle">
+                                        <img src="assets/img/superadmin.jpeg" style="height: 30px;" class="rounded-circle">
                                         Super Admin
                                     </li>
                             </div>
@@ -80,14 +116,52 @@
                                     </div>
                                     <div class="form-group8 row">
                                         <button type="button" class="btn  btn-sm" id="cancelEvt">Cancel</button>
-                                        <button type="button" class="btn btn-sm" id="submitEvt">Submit</button>
+                                        <button type="button" class="btn btn-sm" id="submitPaslon">Submit</button>
                                     </div>
+                                    <div  style="margin: 20px 0px 0px 830px; width:250px" id="msg"></div>
                             </form>
                         </div>
                     </div>
                 </div>
+    </div>
                 
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="assets/script/sidebarSA.js"></script>
+    <script type="text/javascript">
+
+            document.getElementById("submitPaslon").addEventListener("click", postPaslon);
+
+            function postPaslon() {
+            // e.preventDefault();
+
+            // let idAcara = document.getElementById('inputIDAcara').value;
+            let IDKetua = document.getElementById('inputIDKetua').value;
+            let IDWaketu = document.getElementById('inputIDWakil').value;
+            let IDAcara = document.getElementById('inputIDAcara').value;
+            let noUrut = document.getElementById('inputnoAcara').value;
+            let Visi = document.getElementById('inputVisi').value;
+            let Misi = document.getElementById('inputMisi').value;
+            let fotoPaslon = document.getElementById('imgUpload').value;
+
+            fetch('http://localhost:3005/events', {
+                method: 'POST',
+                headers: {
+                    'Accept' : 'application/json, text/plain, */*',
+                    'Content-type' : 'application/json'
+                },
+                body:JSON.stringify({IDKetua:IDKetua, IDWaketu:IDWaketu, IDAcara:IDAcara, noUrut:noUrut, Visi:Visi, Misi:Misi, fotoPaslon:fotoPaslon})
+            })
+            .then((res) => res.text())
+            .then((data) => {
+                    let output = 
+                    `<div id="msg" class="alert alert-success">Data succesfully added.</div>`
+                document.getElementById("msg").innerHTML = output;
+                console.log("data added")
+            })
+
+            }
+
+    </script>
     
 </body>
 </html>

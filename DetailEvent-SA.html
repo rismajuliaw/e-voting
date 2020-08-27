@@ -12,6 +12,42 @@
       <script type="text/javascript" src="assets/script/popper.js"></script>
 </head>
 <body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="assets/img/logofix.png" style="height: 50px;">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="Home-SA.html"><ion-icon name="home-outline" class="col-1" style="height: 22px;"></ion-icon>Home</a>
+                </li>
+                <li class="active">
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><ion-icon name="clipboard-outline" class="col-1" style="height: 22px;"></ion-icon>Daftar Acara</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="Realtime-SA.html">Realtime Count</a>
+                        </li>
+                        <li>
+                            <a href="DaftarPaslon-SA.html">Daftar Paslon</a>
+                        </li>
+                        <li>
+                            <a href="DaftarPemilih-SA.html">Daftar Pemilih</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="DaftarAdmin-SA.html"><ion-icon name="person-outline" class="col-1" style="height: 22px;"></ion-icon>Daftar Admin</a>
+                </li>
+                <li>
+                    <a href="DaftarOrganisasi-SA.html"><ion-icon name="people-outline" class="col-1" style="height: 22px;"></ion-icon>Daftar Organisasi</a>
+                </li>
+                <li>
+                    <a href="loginsuperadmin.html"><ion-icon name="log-out-outline" class="col-1" style="height: 22px;"></ion-icon>Logout</a>
+                </li>
+            </ul>
+        </nav>
                 <div id="content">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <div class="container-fluid">
@@ -78,13 +114,13 @@
                                             <div id="idAdmin">1301193409</div>
                                         </div>
                                         <div class="col-md-4">
-                                            <a href="#"><button class="btn btn-success btnAdmin">Add Admin</button></a>
+                                            <a href="FormDaftarAdmin-SA.html"><button class="btn btn-success btnAdmin">Add Admin</button></a>
                                         </div>
                                         <div class="col-md-4">
-                                            <a href="#"><button class="btn btn-success btnPaslon">Add Paslon</button></a>
+                                            <a href="FormDaftarPaslon-SA.html"><button class="btn btn-success btnPaslon">Add Paslon</button></a>
                                         </div>
                                         <div class="col-md-4">
-                                            <a href="#"><button class="btn btn-warning btnUpdate">Update Acara</button></a>
+                                            <a href="FormDaftarEvent-SA.html"><button class="btn btn-warning btnUpdate">Update Acara</button></a>
                                         </div>
                                         <div class="col-md-4">
                                             <a href="#"><button class="btn btn-danger btnDelete">Delete Acara</button></a>
@@ -95,9 +131,45 @@
                         </div>
                     </div>
                 </div>
-
+    </div>
                 
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="assets/script/sidebarSA.js"></script>
+
+    <script>
+        // document.querySelector(".btnUpdate").addEventListener("click", UpdateAcara);
+
+        // function postAdmin() {
+        //     // e.preventDefault();
+
+        //     // let idAcara = document.getElementById('inputIDAcara').value;
+        //     let namaAcara = document.getElementById('inputNamaAcara').value;
+        //     let tglMulai = document.getElementById('inputBegindate').value;
+        //     let wktMulai = document.getElementById('inputBegintime').value;
+        //     let tglAkhir = document.getElementById('inputFinishdate').value;
+        //     let wktAkhir = document.getElementById('inputFinishdate').value;
+        //     let logoEvt = document.getElementById('imgUpload').value;
+
+        //     fetch('http://localhost:3005/events', {
+        //         method: 'POST',
+        //         headers: {
+        //             'Accept' : 'application/json, text/plain, */*',
+        //             'Content-type' : 'application/json'
+        //         },
+        //         body:JSON.stringify({namaAcara: namaAcara, tglMulai: tglMulai, wktMulai: wktMulai, tglAkhir:tglAkhir, wktAkhir:wktAkhir, logoEvt:logoEvt})
+        //     })
+        //     .then((res) => res.text())
+        //     .then((data) => {
+        //         console.log("data added")
+        //     })
+
+        //     }
+
+        // function UpdateAcara() {
+        //     location.href('FormDaftarEvent.html');
+        // }
+
+    </script>
 
 </body>
 </html>
